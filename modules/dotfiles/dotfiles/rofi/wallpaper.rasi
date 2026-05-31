@@ -1,0 +1,133 @@
+* {
+    // background-color: transparent;
+    border-radius: 12px;
+    font: "JetBrainsMono Nerd Font 13";
+    mPrimary: #3daee9;
+    mOnPrimary: #141618;
+    mSecondary: #1d99f3;
+    mOnSecondary: #141618;
+    mTertiary: #9b59b6;
+    mOnTertiary: #141618;
+    mError: #da4453;
+    mOnError: #141618;
+    mSurface: #202224;
+    mOnSurface: #fcfcfc;
+    mHover: #3daee9;
+    mOnHover: #141618;
+    mSurfaceVariant: #292d32;
+    mSurfaceVariant-alt: rgba (41, 45, 50, 90%);
+    mOnSurfaceVariant: #a1a9b1;
+    mOutline: #707d8a;
+    mOutline-alt: rgba (112, 125, 138, 20%);
+    mShadow: #272c31;
+    background: #232627;
+    foreground: #fcfcfc;
+    cursor: #3daee9;
+    cursorText: #232627;
+    selectionBg: #3daee9;
+    selectionFg: #ffffff;
+
+
+
+}
+configuration {
+    kb-row-up: "alt+k"; 
+    kb-row-down: "alt+j";
+    }
+window {
+    background-color: @mShadow;
+
+    location: center;
+    anchor: center;
+    // padding: 6px;
+}
+
+mainbox {
+        background-color: transparent;
+        expand: true;
+        padding: 12px;
+        children: [inputbar,
+                   horibox
+        ];
+
+}
+inputbar {
+    background-color: @mOutline-alt;
+    text-color:       black;
+    border-radius: 12px;
+    children: [prompt, entry];
+    spacing: 6px;
+    padding: 12px 12px;
+    margin: 0 0 12px 0;
+}
+prompt {
+    border-radius: 16px;
+    padding: 4px 8px;
+    border: 3px;
+    border-color: @mSecondary;
+    background-color: black;
+    text-color: white;
+}
+entry {
+    border-radius: 16px;
+    padding: 4px 12px;
+    border: 3px;
+    border-color: @mSecondary;
+    placeholder: "Search Wallpaper...";
+    placeholder-color: gray;
+    text-color: white;
+    background-color: black;
+}
+
+horibox {
+    orientation: horizontal;
+    spacing: 8px;
+    background-color: @mShadow;
+    height: 20%;
+    children: [
+              listview,
+              icon-current-entry
+    ];
+}
+listview {
+    children: [element];
+    padding: 8px;
+    columns: 1;
+    lines: 6;
+    dynamic: true;
+    fixed-height: true;
+    // scrollbar: true;
+    background-color: @mOutline-alt;
+}
+element {
+        children: [element-icon, element-text];
+        padding: 8px 8px;
+        margin: 4px 0px;
+        border: 2px;
+        background-color: white / 30%;
+}
+element selected {
+    background-color: @mSecondary;
+    border: 2px;
+    border-color: blue;
+}
+element-icon {
+    background-color: transparent;
+    size: 35px;
+    margin: 0 4px 0 0;
+}
+element-text {
+    vertical-align: 0.5;
+    background-color: transparent;
+    font-size: 10px;
+    text-color: white / 60%;
+    location: center;
+}
+element-text selected {
+    text-color: @foreground;
+}
+icon-current-entry {
+    size: 100mm;
+    padding: 8px;
+    background-color: @mOutline-alt;
+}
