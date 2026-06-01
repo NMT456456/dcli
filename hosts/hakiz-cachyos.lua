@@ -14,6 +14,7 @@ dcli.log.info(string.format("Loading config for hakiz-cachyos (%d MB RAM)", memo
 local enabled_modules = {
 	"base",
 	"cli",
+	"dev",
 	"gui",
 	"dotfiles",
 	-- Add your modules here

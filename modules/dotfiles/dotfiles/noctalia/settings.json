@@ -557,6 +557,7 @@
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
+            "eDP-1"
         ],
         "normalUrgencyDuration": 8,
         "overlayLayer": true,
@@ -568,7 +569,7 @@
         },
         "sounds": {
             "criticalSoundFile": "",
-            "enabled": false,
+            "enabled": true,
             "excludedApps": "discord,firefox,chrome,chromium,edge",
             "lowSoundFile": "",
             "normalSoundFile": "",
