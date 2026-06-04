@@ -1,6 +1,7 @@
 local packages = {
 	-- "gcc",
 	"nodejs",
+	"npm",
 	"yarn",
 	"pnpm",
 

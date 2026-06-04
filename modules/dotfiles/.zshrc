@@ -29,6 +29,7 @@ alias lg="lazygit"
 alias spf="superfile"
 alias cf='cd "$(zoxide query -l | fzf --style=full)"'
 alias ffv='selected=$(fzf --style=full --preview="bat --color=always {}") && [ -n "$selected" ] && nvim "$selected"'
+alias bootwin="~/.config/dcli/scripts/bootwin.sh"
 
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward

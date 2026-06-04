@@ -193,10 +193,6 @@
                     "id": "plugin:video-wallpaper"
                 },
                 {
-                    "iconColor": "none",
-                    "id": "PowerProfile"
-                },
-                {
                     "defaultSettings": {
                         "debug": false,
                         "rogcc": {
@@ -209,6 +205,10 @@
                         }
                     },
                     "id": "plugin:noctalia-supergfxctl"
+                },
+                {
+                    "iconColor": "none",
+                    "id": "PowerProfile"
                 },
                 {
                     "compactMode": true,
@@ -416,7 +416,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/hakiz/.face/shana-avatar.jpg",
+        "avatarImage": "/home/hakiz/Pictures/face/shana-avatar.jpg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",

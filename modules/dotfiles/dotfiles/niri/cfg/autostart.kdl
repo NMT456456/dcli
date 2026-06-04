@@ -3,9 +3,9 @@
 
     spawn-sh-at-startup "qs -c noctalia-shell"
     spawn-sh-at-startup "fcitx5 -d"
-    // spawn-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-    // spawn-at-startup "rog-control-center"
-    // spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
-    // spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+    spawn-at-startup "rog-control-center"
+    spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+    spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+    spawn-at-startup "../../../../../scripts/toggle-notif.sh"
 
 

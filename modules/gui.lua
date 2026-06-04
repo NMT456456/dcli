@@ -1,6 +1,8 @@
 local packages = {
 	"google-chrome",
-	"brave-bin",
+	"zen-browser-bin",
+	"coccoc-browser-stable",
+	"microsoft-edge-stable-bin",
 }
 
 return {

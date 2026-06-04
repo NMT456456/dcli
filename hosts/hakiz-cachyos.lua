@@ -10,13 +10,15 @@ dcli.log.info(string.format("Loading config for hakiz-cachyos (%d MB RAM)", memo
 -- ═══════════════════════════════════════════════════════════════════
 -- MODULE SELECTION
 -- ═══════════════════════════════════════════════════════════════════
-
+-- HOST NÀY CHỈ HOẠT ĐỘN TRÊN CACHYOS NIRI + NOCTALIA
+-- ═══════════════════════════════════════════════════════════════════
 local enabled_modules = {
 	"base",
-	"cli",
 	"dev",
+	"packages",
 	"gui",
 	"dotfiles",
+	"asus",
 	-- Add your modules here
 }
 
