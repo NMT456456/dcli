@@ -1,9 +1,5 @@
 local packages = {
-	-- "gcc",
-	"nodejs",
-	"npm",
-	"yarn",
-	"pnpm",
+	"fnm",
 
 	"git",
 	"lazygit",

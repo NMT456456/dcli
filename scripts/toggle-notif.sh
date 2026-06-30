@@ -1,9 +1,14 @@
 #!/bin/bash
-# fix web browser ko sử dụng notification của quickshell
+
+JSONFILE="../modules/dotfiles/dotfiles/noctalia/settings.json"
+JSONFILETMP="../modules/dotfiles/dotfiles/noctalia/settings.json.tmp"
+TRUE="../modules/dotfiles/dotfiles/noctalia/settings.json.true"
+FALSE="../modules/dotfiles/dotfiles/noctalia/settings.json.false"
+
 sleep 3
-
-jq '.notifications = false' ../modules/dotfiles/dotfiles/noctalia/settings.json >../modules/dotfiles/dotfiles/noctalia/settings.json.tmp && mv ../modules/dotfiles/dotfiles/noctalia/settings.json.tmp ../modules/dotfiles/dotfiles/noctalia/settings.json
-
+cp $FALSE $JSONFILE
+# jq '.notifications.enabled = false' $JSONFILE >$JSONFILETMP && mv $JSONFILETMP $JSONFILE
+#
 sleep 1
-
-jq '.notifications = true' ../modules/dotfiles/dotfiles/noctalia/settings.json >../modules/dotfiles/dotfiles/noctalia/settings.json.tmp && mv ../modules/dotfiles/dotfiles/noctalia/settings.json.tmp ../modules/dotfiles/dotfiles/noctalia/settings.json
+cp $TRUE $JSONFILE
+# jq '.notifications.enabled = true' $JSONFILE >$JSONFILETMP && mv $JSONFILETMP $JSONFILE

@@ -14,6 +14,9 @@ input {
     touchpad {
         tap // Enable tap-to-click
         natural-scroll // Enable natural (macOS-style) scrolling
+        scroll-factor 0.6
+        dwt // Disable While Typing
+        disabled-on-external-mouse
     }
 
     mouse {

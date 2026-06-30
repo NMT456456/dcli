@@ -1,5 +1,7 @@
 source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 export SHELL=$(which zsh)
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 vi() {
     if [ $# -eq 0 ]; then
@@ -26,7 +28,6 @@ alias llt="eza --icons=always -T -l -a"
 alias cd="z"
 alias cl="clear"
 alias lg="lazygit"
-alias spf="superfile"
 alias cf='cd "$(zoxide query -l | fzf --style=full)"'
 alias ffv='selected=$(fzf --style=full --preview="bat --color=always {}") && [ -n "$selected" ] && nvim "$selected"'
 alias bootwin="~/.config/dcli/scripts/bootwin.sh"
@@ -42,3 +43,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(zoxide init zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"

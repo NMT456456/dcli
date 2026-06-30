@@ -6,6 +6,5 @@
     spawn-at-startup "rog-control-center"
     spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
     spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
-    spawn-at-startup "../../../../../scripts/toggle-notif.sh"
 
 
